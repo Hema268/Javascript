@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //object literal
+    let input = 'name'
+    let itprof = {
+        name: 'Hema',
+        tech: 'Js',
+        role: "developer",
+        //making more comlex of objects
+        laptop: {
+            cpu : 'i7',
+            ram : 4,
+            brand: 'asus'
+        }
+
+    }  // this  is an object
+
+    console.log(itprof);
+    console.log(itprof.name, itprof.tech);
+    //another meethos to  access properties
+    console.log(itprof['role']);
+    console.log(itprof[input]);
+
+    console.log(itprof.laptop.cpu+" "+itprof.laptop.ram+ "gb");
+    console.log(itprof.laptop.brand.length);
+    //if we trying to fetch something unknown it will produces undefined
+    // use condition ? to check if it this  is available or  not in order to avoid error
+    
+    console.log(itprof.laptop.gen?.length)
+
+    //Delete property 
+    delete itprof.laptop.brand
+    console.log(itprof);
+
+    //for in loop
+    let stud = {
+        id: 'Latha',
+        sub: 'python',
+        address :{
+            city: 'salem',
+            state: 'tn',
+            pin: 6006
+        }
+    }
+
+    for(let k in stud){
+        console.log(k, stud[k])
+    }
+    for(let k in stud.address){
+        console.log(k, stud.address[k])
+    }
+    
+</script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+    <style>
+        body{
+            background-color: #e6eedd;
+        }
+        #main-div{
+            width: 450px;
+            height: 300px;
+            border: 1px solid #080808;
+            background-color: white;
+            border-radius: 10px;
+            margin: 50px auto;
+        }
+        button{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid #000000;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-div"></div>
+        <button onclick="changeColor('red')">Red</button>
+        <button onclick="changeColor('green')">Green</button>
+        <button onclick="changeColor('blue')">Blue</button>
+        <button onclick="changeColor('yellow')">Yellow</button>
+        <button onclick="changeColor('orange')">Orange</button>
+        <button onclick="changeColor('purple')">Purple</button>
+        <button onclick="changeColor('pink')">Pink</button>
+        <button onclick="changeColor('black')">Black</button>
+</body>
+<script>
+    function changeColor(val){
+        document.getElementById('main-div').style.backgroundColor =val;
+    }
+</script>
+</html>

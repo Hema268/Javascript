@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #000000;
+    }
+    .container {
+        width: 550px;
+        height: 500px;
+        border: 5px solid #fcd7ee;
+        margin: 50px auto;
+        text-align: center;
+        padding-top: 40px;
+        border-radius: 70px 20px 40px 20px;
+        background-color: #363336;
+    }
+    input {
+        grid-column: span 8;
+        width: 450px;
+        height: 54px;
+        margin: 10px;
+        margin-bottom: 20px;
+        padding-left: 30px;
+        border-radius: 10px;
+        font-size: 25px;
+        color: #4e4c4a;
+        background-color: #e1eaf1;
+        box-shadow: inset -5px -5px 12px #FF6D18,
+        inset 5px 5px 12px #FF6D18;
+        border: none;
+    }
+    button {
+        width: 100px;
+        height: 50px;
+        margin: 10px;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        font-weight: bold;
+        box-shadow: 3px 3px 5px #9eee7e, -3px -3px 5px #9ef17d;
+        border: none;
+        background-color: #FF6D18;
+    }
+    button:active {
+        box-shadow: inset 3px 3px 5px #70ff37, inset -3px -3px 5px #70ff37;
+    }
+</style>
+<body>
+    <div class="container">
+        <input type="text" placeholder="0" id="output-screen"><br>
+        <button onclick="clearScreen()">AC</button>
+        <button onclick="del()">DEL</button>
+        <button onclick="display('%')">%</button>
+        <button onclick="display('**')">^</button><br>
+        <button onclick="display('7')">7</button>
+        <button onclick="display('8')">8</button>
+        <button onclick="display('9')">9</button> 
+        <button onclick="display('+')">+</button><br>
+        <button onclick="display('4')">4</button>
+        <button onclick="display('5')">5</button>
+        <button onclick="display('6')">6</button>
+        <button onclick="display('-')">-</button><br>
+        <button onclick="display('1')">1</button>
+        <button onclick="display('2')">2</button>
+        <button onclick="display('3')">3</button>
+        <button onclick="display('*')">*</button><br>
+        <button onclick="display('0')">0</button>
+        <button onclick="display('.')">.</button>
+        <button onclick="display('/')">/</button>
+        <button onclick="calculate()">=</button><br>
+    </div>
+</body>
+<script type="text/javascript">
+    let outputscreen = document.getElementById("output-screen");
+
+    function clearScreen() {
+        outputscreen.value = "";
+    }
+
+    function del() {
+        outputscreen.value = outputscreen.value.slice(0, -1);
+    }
+
+    function display(num) {
+        outputscreen.value += num;
+    }
+
+    function calculate() {
+        try {
+            outputscreen.value = eval(outputscreen.value);
+        } catch (err) {
+            alert("Invalid");
+        }
+        let 
+    }
+</script>
+</html>

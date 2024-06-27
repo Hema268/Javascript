@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="value">
+        <button id="btn" onclick="getInput()">Click</button>
+    </div>
+    <h1 id="display"></h1>
+</body>
+<script>
+    function getInput(){
+        let userInput = document.getElementById("value").value
+        document.getElementById('display').innerHTML = userInput;
+        //innerHTML is used to display the all elements below the display id
+        if (userInput=== "1"){
+            // checks value and at the same time it checks the data type
+            // if == it checks the value only
+           alert(userInput); 
+        }
+        
+    }
+///  simple function
+    function call(){
+        console.log("Hello hi .....");
+        document.write("Hemalatha");
+        return "end";
+    }
+    //call();
+    let str = call();
+    console.log(str)
+
+// passing parameters
+function greet(u1){
+    return `Hello ${u1}!!`
+}
+let u = "Hema";
+console.log(greet(u));
+
+//anonymous function where didn't have fun name
+let add = function(n1,n2){
+    return n1 + n2;
+}
+let r = add(6,8);
+console.log(r);
+let s = add;
+console.log(s(4,6));
+
+</script>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Hello Hema</h1>
+    <p id="one">Hema</p>
+    <!--onclick event-->
+    <button onclick="Change()">Change</button><br>
+    <div></div>
+    <!--exercises-->
+    <input type="text" id="num1" >
+    <input type="text" id="num2">
+    <button onclick="Add()">Add</button>
+    <p id="result">Result : </p>
+</body>
+<script>
+    // Dom Manipulation
+    var para = document.getElementById("one");
+    //console.log(para.textContent);
+   // para.textContent = "Bye";
+    console.log(document.getElementById('title').textContent);
+    document.getElementById('title').textContent='bye hema';
+
+    //Event Handling and types
+    /* 1. onclick
+       2. onmouseover
+       3.onmouseout
+       4.onkeydown
+       5.onload
+       6.onchange
+    */
+    function Change(){
+        para.textContent = "Hemalatha Developer"
+    }
+
+    //exercises
+    function Add(){
+        let n1 = document.getElementById('num1').value;
+        let n2 = document.getElementById('num2').value;
+        document.getElementById('result').innerHTML = parseInt(n1) + parseInt(n2);
+    }
+
+    //anonymous function where didn't have fun name
+    let add = function(n1,n2){
+        return n1 + n2;
+    }
+
+    console.log(add(4,6));
+
+    // How to create Random Number in javascript
+    let a = Math.random();
+    console.log(a* 10);
+/// floor function
+    var b = Math.floor(6.99999999)
+    console.log(Math.floor(a*10)+1);
+    console.log(b);                                     
+</script>
+</html>
