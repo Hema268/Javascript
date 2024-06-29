@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="update()">Add</button>
+    <div id="result"></div>
+</body>
+<script>
+    //slecet hi 
+    let div = document.getElementById('result');
+    function update(){
+        //Creating new element
+        var listitem = document.createElement("h1");
+        listitem.textContent = "HEMA";
+        div.append(listitem);
+    }
+</script>
+</html>
