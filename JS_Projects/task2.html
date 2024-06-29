@@ -9,7 +9,14 @@
     <h1 id="result">Name</h1>
     <button onclick="update(event)">Hema</button>
     <button onclick="update(event)">Poorna</button>
-    <button onclick="update(event)">Trisa</button>
+    <button onclick="update(event)">Trisa</button><br>
+    <h1 id = "one" onclick="del(event)">One</h1>
+    <h1 id = "two" onclick="del(event)">Two</h1>
+    <h1 id = "three" onclick="del(event)">Three</h1>
+    <h1 id = "four" onclick="del(event)">Four</h1>
+    <h1 id = "five" onclick="del(event)">Five</h1>
+    <h1 id = "six" onclick="del(event)">Six</h1>
+    <h1 id = "seven" onclick="del(event)">Seven</h1>
 </body>
 <script>
     //Learning Events
@@ -17,5 +24,9 @@
     function update(event){
         h1.textContent = event.target.textContent;
     }
+    function del(event){
+        event.target.remove();
+    }
+        
 </script>
 </html>
