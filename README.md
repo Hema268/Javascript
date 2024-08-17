@@ -12,6 +12,10 @@ This Repository shows my process of learning Javascript and also some implimenta
 3.Guess the Number 
   In this Project i have implemented my Knowledge in the DOM manipulations and some what in fuunction and event Handling, and also designed my UI with help of css to make my page Presentable.
 
+4.Weather App using Weather-api:
+    In this Project i have done weather rendering website were it uses weather api (openWeatherApi.com) and also used Asynchronous  function await. For My UI I have used css. 
+
+
 
 #JS_Learning
 1. Functions
