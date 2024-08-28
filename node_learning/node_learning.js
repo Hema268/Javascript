@@ -2,8 +2,9 @@ console.log("Hello hema");
 
 const os = require('os')
 const path = require('path')
-//const test = require('./test')
+const test = require('./test')
 const {add,sub,mul,div} = require('./test')
+import {add,sub,mul,div} from './test.js';//ES module will behave same as the vannila javascript
 
 //gives us informations about operating system
 console.log(os.type()) /// op: Windows_NT
@@ -27,12 +28,12 @@ console.log(path.parse(__filename));
 //     base: 'node_learning.js',
 //     ext: '.js',
 //     name: 'node_learning'
-//   }
+//  }
 
-// console.log(test.add(4,2));//6
-// console.log(test.sub(4,2));//2
-// console.log(test.mul(4,2));//8
-// console.log(test.div(4,2));//2
+console.log(test.add(4,2));//6
+console.log(test.sub(4,2));//2
+console.log(test.mul(4,2));//8
+console.log(test.div(4,2));//2
 
 console.log(add(4,2));//6
 console.log(sub(4,2));//2
