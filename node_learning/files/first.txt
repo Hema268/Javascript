@@ -1,0 +1,34 @@
+HI guys I'm Hemalatha gunasekaran.
+Python is a general-purpose, interpreted, interactive, object-oriented programming language. It's often used for web development, software development, data science, and machine learning. Python is also used for automating tasks, analyzing data, and visualizing data.
+
+
+what is diffrence between import and require?
+Require:::
+built-in require function is the easiest way to include modules in this system. When we call require in Node.js then the require function first reads a JavaScript file, executes that file,
+ and then the require function proceeds to return the exports object.
+ 1.It is used in the CommonJS module system.
+ 2.Loading is synchronous in require (i.e., modules are imported sequentially.)
+3.Because of synchronous loading performance of require less efficient than import.
+4.f we import a module using require then the complete module is imported. So, memory usage is more.
+5.require imports of the components exported by module. exports in the module.
+6.require can be called directly as it is the default way of importing.
+7.require can be called anywhere in the program
+
+
+ For const test = require('example') syntax:
+
+ import:::
+
+ As required works in the CommonJs modules system, similarly, import is used for including modules in ES6 (version 6 of the ECMA Script) module system.
+  Which means import is used to include an ES module. At present Node.js doesn’t support ES6 import directly. So if we try to use the import keyword for importing modules directly in node js it will throw out the error. 
+ So how can we use import for including modules then you can do so in the following ways:
+ 1.Using ".mjs" extension
+ 2.Using package.json file
+
+ 1.It is used in the ES6 (ECMAScript version 6) module system.
+ 2.Loading is asynchronous in import (i.e., modules are imported without waiting for previous module import to complete.)
+ 3.Because the Asynchronous loading performance of import is better than required.
+ 4.Using import we can selectively load pieces of code in the module. So, memory usage is less compared to require.
+ 5.mport includes components exported by export in the module.
+ 6.To use import in our project we need to enable ES6 or ECMAScript module in our project.
+ 7.import works only at the top of the program
