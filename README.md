@@ -21,3 +21,5 @@ This Repository shows my process of learning Javascript and also some implimenta
 1. Functions
 2. Objects
 3. DOM Manipulations and Event Handling
+4. Learning node 
+5.Get, post, delete, update
